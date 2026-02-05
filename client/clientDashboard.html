@@ -10,25 +10,31 @@
 <body>
 
   <header>
-    <h1>Pa-Buy, Bes</h1>
+    <a href="clientDashboard.html" class="brand">Pa-Buy, Bes</a>
     <div class="top-icons">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-solid fa-motorcycle"></i>
-      <i class="fa-solid fa-user"></i>
+      <button id="cartBtn" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button id="messagesBtn" aria-label="Messages"><i class="fa-solid fa-envelope"></i></button>
+      <button id="profileBtn" aria-label="Profile"><i class="fa-solid fa-user"></i></button>
     </div>
   </header>
 
   <nav class="nav-bar">
-    <button class="active">Shops</button>
-    <button>Delivery</button>
-    <button>Pick-up</button>
+    <button id="storesBtn" class="active">Stores</button>
+    <button id="deliveryBtn">Delivery</button>
+    <button id="pickupBtn">Pick-up</button>
   </nav>
 
   <div class="slideshow" id="slideshow"></div>
 
   <div class="search-container">
-    <input type="text" placeholder="Search for food, shops, or deals..." />
+    <input id="searchInput" type="text" placeholder="Search for food, shops, or deals..." />
+    <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
   </div>
+
+  <section class="riders-section">
+    <h2>Recommended Riders</h2>
+    <div class="riders-container" id="ridersContainer"></div>
+  </section>
 
   <section class="cards-container">
     <div class="food-card">
