@@ -1,1 +1,105 @@
-//comment
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pa-buy, Bes! | Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li onclick="showSection('clients')">Clients</li>
+            <li onclick="showSection('stores')">Stores</li>
+            <li onclick="showSection('runners')">Runners</li>
+            <li onclick="showSection('orders')">Orders</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+
+        <!-- CLIENTS -->
+        <section id="clients" class="section">
+            <h3>Registered Clients</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date Joined</th>
+                </tr>
+                <tr>
+                    <td>Juan Dela Cruz</td>
+                    <td>juan@email.com</td>
+                    <td>2026-02-05</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- STORES -->
+        <section id="stores" class="section hidden">
+            <h3>Store Requests</h3>
+            <table>
+                <tr>
+                    <th>Store Name</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Bes Sari-Sari</td>
+                    <td>Maria Santos</td>
+                    <td>Pending</td>
+                    <td>
+                        <button class="approve">Approve</button>
+                        <button class="reject">Reject</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- RUNNERS -->
+        <section id="runners" class="section hidden">
+            <h3>Runner Applications</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Vehicle</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Pedro Reyes</td>
+                    <td>Motorcycle</td>
+                    <td>Pending</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- ORDERS -->
+        <section id="orders" class="section hidden">
+            <h3>All Orders</h3>
+            <table>
+                <tr>
+                    <th>Client</th>
+                    <th>Store</th>
+                    <th>Product</th>
+                    <th>Runner</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Bes Store</td>
+                    <td>Rice</td>
+                    <td>Pedro</td>
+                    <td>Delivered</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
